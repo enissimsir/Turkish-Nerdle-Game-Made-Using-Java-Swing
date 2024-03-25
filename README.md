@@ -1,4 +1,4 @@
-# Turkish-Nerdle-Game-Made-From-Java-Swig
+# Turkish-Nerdle-Game
 It's a classic Nerdle game that contains statistics of how many games successfully completed, how many games are lost, how many games were interrupted, how many lines on average, on average how long did it take to complete.
 
 Run the GUI file on Eclipse

@@ -1,20 +1,15 @@
 package nyps;
 import java.util.Scanner;
-import java.util.Timer;
-import java.util.TimerTask;
-import java.awt.BorderLayout;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextField;
-import java.awt.Dimension;
+
 import javax.swing.JButton;
-import java.lang.runtime.ObjectMethods;
-import javax.swing.JList;
-import javax.swing.JTextArea;
-import javax.swing.JTextPane;
+
 import javax.swing.SwingConstants;
 import javax.swing.JLabel;
 import java.awt.event.ActionListener;
@@ -25,6 +20,10 @@ import java.awt.Font;
 
 
 public class Gui extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	String data;
 	int satir;
 
@@ -118,7 +117,7 @@ public class Gui extends JFrame {
 		btnTest.setBounds(155, 223, 469, 45);
 		contentPane.add(btnTest);
 		
-		lblHosgeldiniz = new JLabel("NÖRDIL");
+		lblHosgeldiniz = new JLabel("Nï¿½RDIL");
 		lblHosgeldiniz.setFont(new Font("Sitka Heading", Font.BOLD, 37));
 		lblHosgeldiniz.setBounds(319, 37, 162, 57);
 		contentPane.add(lblHosgeldiniz);
@@ -209,7 +208,7 @@ public class Gui extends JFrame {
         catch (FileNotFoundException ed) {
             data="tamamlanan oyun yok";
         }
-		istatistik4.setText("\nOrtalama kaç satirda tamamlandi: " + data);
+		istatistik4.setText("\nOrtalama kaï¿½ satirda tamamlandi: " + data);
 		try {
             File Obj = new File("ortalamaSure.txt");
             Scanner Reader = new Scanner(Obj);
@@ -219,6 +218,6 @@ public class Gui extends JFrame {
         catch (FileNotFoundException ed) {
         	data="tamamlanan oyun yok";
         }
-		istatistik5.setText("\nOrtalama ne kadar sürede tamamlandi: " + data);
+		istatistik5.setText("\nOrtalama ne kadar sï¿½rede tamamlandi: " + data);
       }
 }

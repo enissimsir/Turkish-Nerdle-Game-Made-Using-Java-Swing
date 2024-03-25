@@ -62,7 +62,7 @@ public class GameGui extends JFrame implements ActionListener {
 		});
 	}
 
-	@SuppressWarnings({ "deprecation", "static-access", "static-access" })
+	@SuppressWarnings({ "static-access" })
 	public GameGui(String res) {
  
        this.stack= new Stack<Integer>();
@@ -456,7 +456,7 @@ public class GameGui extends JFrame implements ActionListener {
 				}
 	    			if(count==res.length()){
 	    				swingtimer.stop();
-    			      int input = JOptionPane.showConfirmDialog(null, "Denklemi basariyla buldunuz. Geçen zaman:"+start,"Ana Sayfaya dönmek için evet'i týklayýnýz",
+    			      int input = JOptionPane.showConfirmDialog(null, "Denklemi basariyla buldunuz. Geï¿½en zaman:"+start,"Ana Sayfaya dï¿½nmek iï¿½in evet'i tï¿½klayï¿½nï¿½z",
     							JOptionPane.YES_NO_OPTION, JOptionPane.DEFAULT_OPTION);
     			      basariYazdir();
     			      ortalamaSatir(i);
@@ -476,7 +476,7 @@ public class GameGui extends JFrame implements ActionListener {
 	    			JOptionPane.showMessageDialog(null, "Basarili,Diger satira gecebilirsiniz.");
     			}
     			else{
-    				JOptionPane.showMessageDialog(null, "Kaybettiniz,olmasý gereken denklem:"+" "+res);
+    				JOptionPane.showMessageDialog(null, "Kaybettiniz,olmasï¿½ gereken denklem:"+" "+res);
     				kaybedilenYazdir();
     				Gui gvi = new Gui();
     				gvi.setVisible(true);
@@ -504,7 +504,7 @@ public class GameGui extends JFrame implements ActionListener {
 		         }
 		         catch(Exception esd)
 		         {
-		        	 System.out.println("boyut aþýldý");
+		        	 System.out.println("boyut aï¿½ï¿½ldï¿½");
 		         }
 				
 			}
@@ -978,7 +978,7 @@ public class GameGui extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		start++;
 		if (start >= 1) {
-			tLabel.setText("GEÇEN ZAMAN: " + start+" "+"sn");
+			tLabel.setText("GEï¿½EN ZAMAN: " + start+" "+"sn");
 			
 		} else {
 			swingtimer.stop();
@@ -1138,7 +1138,7 @@ public class GameGui extends JFrame implements ActionListener {
 	            System.out.println("Basarili.");
 	        }
 	        catch (IOException es) {
-	            System.out.println("Hata oluþtu");
+	            System.out.println("Hata oluï¿½tu");
 	            es.printStackTrace();
 	        }
 	}
